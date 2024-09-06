@@ -1,0 +1,65 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex; /* Usa flexbox para centrar el contenido */
+  flex-direction: column; /* Alinea los elementos en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 1rem; /* Añade un poco de padding */
+}
+
+h1 {
+  text-align: center; /* Centra el título */
+  margin: 1rem 0; /* Añade margen vertical */
+}
+
+.card-container {
+  display: grid; /* Usar grid para el contenedor de tarjetas */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta automáticamente las columnas */
+  grid-gap: 16px; /* Espacio entre las tarjetas */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.card {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 16px;
+}
+
+.card-description {
+  margin: 0 16px 16px;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Para pantallas pequeñas, una sola columna */
+  }
+}

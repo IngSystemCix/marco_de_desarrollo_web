@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <title>seraphine code :: Inicio</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="../favicon.svg" alt="Seraphine Code" />
+        <h1>seraphine code</h1>
+      </a>
+      <nav>
+        <ul>
+          <li class="btn-container">
+            <a href="#" class="btn-nav">Enfoque</a>
+            <div class="drop-down">
+              <a href="#">Transformación de servicio de TI</a>
+              <a href="#">Transformación de porfolio de aplicaciones</a>
+            </div>
+          </li>
+          <li class="btn-container">
+            <a href="#" class="btn-nav">Servicios y soluciones</a>
+            <div class="drop-down service-solution">
+              <div class="container-service">
+                <h2>Servicios</h2>
+                <a href="#">Mantenimiento</a>
+                <a href="#">Desarrollo</a>
+                <a href="#">Consultoría</a>
+              </div>
+              <div class="container-service">
+                <h2>Soluciones</h2>
+                <a href="#">E-commerce</a>
+                <a href="#">Sistemas de información</a>
+                <a href="#">Aplicaciones móviles</a>
+              </div>
+            </div>
+          </li>
+          <li class="btn-container">
+            <i class="bi bi-search"></i>
+            <div class="drop-down search">
+              <input type="text" placeholder="Buscar aquí" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="slider">
+      <div class="slider-container">
+        <div class="slide">
+          <img src="../src/img/imagen1.webp" alt="Slide 1" />
+          <div class="slide-content">
+            <h2>Innovación y Tendencias</h2>
+            <p>
+              "Ayudamos a las empresas en su camino hacia la transformación
+              digital."
+            </p>
+            <button>Descubre más</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="../src/img/imagen2.webp" alt="Slide 2" />
+          <div class="slide-content">
+            <h2>Equipo de Expertos</h2>
+            <p>
+              "Colaboramos con expertos de la industria para ofrecerte lo
+              mejor."
+            </p>
+            <button>Descubre más</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="../src/img/imagen3.webp" alt="Slide 3" />
+          <div class="slide-content">
+            <h2>Tecnologías Utilizadas</h2>
+            <p>
+              "Utilizamos las últimas tecnologías como React, Node.js, y más
+              para brindar soluciones efectivas."
+            </p>
+            <button>Descubre más</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="nav-secundary">
+      <a href="./#nosotros">Nosotros</a>
+      <a href="./#proyectos">Proyectos</a>
+      <a href="./#ofertas">Ofertas</a>
+      <a href="./#contacto">Contacto</a>
+    </nav>
+    <main>
+      <section id="nostros">
+        <h2>Nosotros</h2>
+        <p>
+          Somos una empresa de desarrollo de software con más de 10 años de
+          experiencia en el mercado. Nos especializamos en la transformación
+          digital de empresas y organizaciones, ofreciendo soluciones a medida
+          para cada cliente.
+        </p>
+        <p>
+          Nuestro equipo de expertos está formado por profesionales de la
+          industria con amplia experiencia en el desarrollo de aplicaciones web
+          y móviles, sistemas de información, e-commerce, y más.
+        </p>
+        <p>
+          Trabajamos con las últimas tecnologías del mercado, como React,
+          Node.js, Angular, y más, para brindar soluciones efectivas y de
+          calidad a nuestros clientes.
+        </p>
+      </section>
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="project">
+          <img src="../src/img/proyecto1.webp" alt="Proyecto 1" />
+          <div class="project-content">
+            <h3>Logística</h3>
+            <p>
+              Desarrollo de una aplicación móvil para una empresa de logística.
+            </p>
+            <button onclick="openModal('modal1')">Ver más</button>
+          </div>
+        </div>
+        <div class="project">
+          <img src="../src/img/proyecto2.webp" alt="Proyecto 2" />
+          <div class="project-content">
+            <h3>Servicios</h3>
+            <p>
+              Desarrollo de un sistema de información para una empresa de
+              servicios.
+            </p>
+            <button onclick="openModal('modal2')">Ver más</button>
+          </div>
+        </div>
+        <div class="project">
+          <img src="../src/img/proyecto3.webp" alt="Proyecto 3" />
+          <div class="project-content">
+            <h3>Tienda online</h3>
+            <p>Desarrollo de una tienda online para una empresa de moda.</p>
+            <button onclick="openModal('modal3')">Ver más</button>
+          </div>
+        </div>
+
+        <!-- Modales -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h3>Logística</h3>
+            <p>
+              Detalles sobre el desarrollo de una aplicación móvil para una
+              empresa de logística. Esta aplicación móvil fue diseñada para
+              optimizar los procesos de logística de la empresa, permitiendo
+              un seguimiento en tiempo real de los envíos, la gestión de
+              inventario y la coordinación de rutas de entrega. Además, se
+              implementaron funcionalidades como la generación de informes y
+              estadísticas para facilitar la toma de decisiones. El
+              desarrollo de esta aplicación se realizó utilizando
+              tecnologías como React Native y Firebase, garantizando un
+              rendimiento y seguridad óptimos.
+            </p>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h3>Servicios</h3>
+            <p>
+              Detalles sobre el desarrollo de un sistema de información para
+              una empresa de servicios. Este sistema de información fue
+              diseñado para optimizar los procesos internos de la empresa,
+              permitiendo una gestión eficiente de los servicios ofrecidos.
+              Se implementaron funcionalidades como la gestión de clientes,
+              seguimiento de proyectos y generación de informes para
+              facilitar la toma de decisiones. El desarrollo de este sistema
+              se realizó utilizando tecnologías como HTML, CSS, JavaScript y
+              MySQL, garantizando un rendimiento y seguridad óptimos.
+            </p>
+          </div>
+        </div>
+
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h3>Tienda online</h3>
+            <p>
+              Detalles sobre el desarrollo de una tienda online para una
+              empresa de moda. Esta tienda online fue diseñada para ofrecer
+              una experiencia de compra única y atractiva para los clientes.
+              Implementamos un diseño moderno y funcional, con
+              características como carrito de compras, opciones de pago
+              seguras y seguimiento de pedidos en tiempo real. Además, se
+              integraron herramientas de marketing digital para aumentar la
+              visibilidad y el alcance de la tienda. Nuestro equipo de
+              expertos en desarrollo web utilizó tecnologías como HTML, CSS,
+              JavaScript y PHP para garantizar un rendimiento óptimo y una
+              experiencia de usuario fluida. ¡Explora nuestra tienda online
+              y descubre las últimas tendencias de moda!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="ofertas">
+        <h2>Ofertas</h2>
+        <div class="offer">
+          <img src="../src/img/oferta1.webp" alt="Oferta 1" />
+          <div class="offer-content">
+            <h3>App mobile</h3>
+            <p>Descuento del 20% en el desarrollo de una aplicación móvil.</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+        <div class="offer">
+          <img src="../src/img/oferta2.webp" alt="Oferta 2" />
+          <div class="offer-content">
+            <h3>Sistema informático</h3>
+            <p>
+              Descuento del 30% en el desarrollo de un sistema de información.
+            </p>
+            <button>Ver más</button>
+          </div>
+        </div>
+        <div class="offer">
+          <img src="../src/img/oferta3.webp" alt="Oferta 3" />
+          <div class="offer-content">
+            <h3>Tienda online</h3>
+            <p>Descuento del 40% en el desarrollo de una tienda online.</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <div>
+          <div class="dev">
+            <a
+              href="https://www.linkedin.com/in/juan-bladimir-romero-collazos/"
+              class="social"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <img src="../src/img/juan_dev.webp" alt="" />
+            <span>Juan Romero Collazos</span>
+            <small>Backend</small>
+          </div>
+          <div class="dev">
+            <a
+              href="https://www.linkedin.com/in/hugo-fupuy-chamam%C3%A9-70002a304/"
+              class="social"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <img src="../src/img/hugo_dev.webp" alt="" />
+            <span>Hugo Fupuy Chanamé</span>
+            <small>DBA</small>
+          </div>
+          <div class="dev">
+            <a
+              href="https://www.linkedin.com/in/daniel-ramos-marrufo-71969b247/"
+              class="social"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <img src="../src/img/daniel_dev.webp" alt="" />
+            <span>Daniel Ramos Marrufo</span>
+            <small>UX/UI</small>
+          </div>
+          <div class="dev">
+            <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
+            <img src="../src/img/daniel_olivares_dev.webp" alt="" />
+            <span>Daniel Olivos</span>
+            <small>Frontend</small>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>Seraphine Code &copy; 2024. Todos los derechos reservados.</p>
+        <div class="footer-form">
+          <h3>Suscríbete a nuestro boletín</h3>
+          <form id="subscribe-form">
+            <input
+              type="email"
+              placeholder="Ingresa tu correo electrónico"
+              required
+            />
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/slider.js"></script>
+    <script src="../src/js/modal.js"></script>
+  </body>
+</html>
